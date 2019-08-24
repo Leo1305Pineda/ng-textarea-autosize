@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/Leo1305Pineda/ng-textarea-autosize/issues"
   },
-  "homepage": "https://github.com/Leo1305Pineda/ng-textarea-autosize#readme"
+  "homepage": "https://github.com/Leo1305Pineda/ng-textarea-autosize#readme",
+  "dependencies": {
+    "rxjs": "^6.5.2"
+  }
 }
