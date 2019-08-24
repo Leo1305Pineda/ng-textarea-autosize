@@ -33,6 +33,7 @@
   "homepage": "https://github.com/Leo1305Pineda/ng-textarea-autosize#readme",
   "dependencies": {
     "rxjs": "^6.5.2",
+    "typescript": "^3.1.6",
     "zone.js": "^0.9.1"
   }
 }
