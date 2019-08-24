@@ -1,5 +1,4 @@
 import { Input, AfterViewInit, ElementRef, HostListener, Directive, Output, EventEmitter } from '@angular/core';
-
 export class ResizedEvent {
   element: HTMLElement;
   width: number;
@@ -10,7 +9,6 @@ export class ResizedEvent {
     this.height = o.height;
   }
 }
-
 @Directive({
   // tslint:disable-next-line:directive-selector
   selector: 'textarea[autosize]'
@@ -82,6 +80,14 @@ export class TextAreaAutoSize implements AfterViewInit {
     } else if (style.resize === 'vertical') {
       this.el.style.resize = 'none';
     }
+    setInterval(() => {
+      const el: any = this.el;
+      const value: string = el.value;
+      if (value.length === 0 && !!this.resizeEvent.height) {
+        el.style.height = 'auto';
+        this.resizeEvent = new ResizedEvent({});
+      }
+    }, 800);
     // run first adjust
     this.adjust();
   }
@@ -103,7 +109,7 @@ export class TextAreaAutoSize implements AfterViewInit {
       textArea.style.overflowY = 'auto';
     }
     const enc = this.resizeEvent ? height !== this.resizeEvent.height : false;
-    this.resizeEvent = new ResizedEvent({ element, width, height });
+    this.resizeEvent = new ResizedEvent({element, width, height});
     if (enc) {
       this.resized.emit(this.resizeEvent);
     }
