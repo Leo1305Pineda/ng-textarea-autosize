@@ -103,7 +103,7 @@ export class TextAreaAutoSize implements AfterViewInit {
       textArea.style.overflowY = 'auto';
     }
     const enc = this.resizeEvent ? height !== this.resizeEvent.height : false;
-    this.resizeEvent = new ResizedEvent({element, width, height});
+    this.resizeEvent = new ResizedEvent({ element, width, height });
     if (enc) {
       this.resized.emit(this.resizeEvent);
     }
