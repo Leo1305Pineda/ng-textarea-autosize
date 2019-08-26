@@ -55,3 +55,7 @@ Set a maximum height on your textarea.
 ## Licence
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
+
+## thanks
+
+To Steve Papa for [ng-autosize](https://www.npmjs.com/package/ng-autosize) the implementation that was taken as the basis for this directive
