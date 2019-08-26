@@ -1,5 +1,5 @@
 {
-  "name": "ng-textarea-autosize",
+  "name": "@leo1305pineda/ng-textarea-autosize",
   "version": "1.0.0",
   "description": "Angular directive that automatically adjusts textarea height to fit content",
   "keywords": [
@@ -19,7 +19,9 @@
     "resize",
     "angular2-autosize"
   ],
-  "scripts": {},
+  "scripts": {
+    "publish": "npm publish --access public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Leo1305Pineda/ng-textarea-autosize.git"
@@ -36,5 +38,7 @@
     "tslint": "^5.16.0",
     "typescript": "^3.1.6",
     "zone.js": "^0.8.29"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {}
 }
