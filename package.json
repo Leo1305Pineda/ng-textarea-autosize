@@ -1,5 +1,5 @@
 {
-  "name": "ng-textarea-autozise",
+  "name": "ng-textarea-autosize",
   "version": "1.0.0",
   "description": "Angular directive that automatically adjusts textarea height to fit content",
   "keywords": [
